@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-navy: #0A2540;
+  --color-brand-blue: #0066CC;
+  --color-brand-gold: #D4AF37;
+}
+
+html {
+  scroll-behavior: smooth;
+}
