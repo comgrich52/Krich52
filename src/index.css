@@ -4,8 +4,8 @@
 @theme {
   --font-sans: "Prompt", ui-sans-serif, system-ui, sans-serif;
   --color-brand-navy: #0A2540;
-  --color-brand-blue: #0066CC;
-  --color-brand-gold: #D4AF37;
+  --color-brand-blue: #004B87;
+  --color-brand-gold: #ffc107;
 }
 
 html {

@@ -71,10 +71,9 @@ export default function App() {
           <div className="flex justify-between items-center">
             <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center z-50">
               <img
-                src="https://drive.google.com/uc?export=view&id=14QqOsvxFEKmQu-Kmj4T0an4YrEwPAJTb"
+                src="/logo.png"
                 alt="Prom Family Engineering Logo"
                 className="h-12 md:h-16 w-auto object-contain bg-white/90 rounded-lg p-2 shadow-sm"
-                referrerPolicy="no-referrer"
               />
             </a>
 
@@ -138,12 +137,12 @@ export default function App() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2070&auto=format&fit=crop" 
-            alt="วิศวกรกำลังทำ PM ระบบโซลาร์เซลล์" 
+            src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2069&auto=format&fit=crop" 
+            alt="วิศวกรกำลังวัดค่าและตรวจสอบระบบไฟฟ้า" 
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/90 to-brand-navy/60"></div>
+          <div className="absolute inset-0 bg-brand-navy/85"></div>
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -501,10 +500,9 @@ export default function App() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center">
               <img
-                src="https://drive.google.com/uc?export=view&id=14QqOsvxFEKmQu-Kmj4T0an4YrEwPAJTb"
+                src="/logo.png"
                 alt="Prom Family Engineering Logo"
                 className="h-16 md:h-20 w-auto object-contain bg-white rounded-xl p-3 shadow-sm"
-                referrerPolicy="no-referrer"
               />
             </div>
             
