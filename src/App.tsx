@@ -69,14 +69,13 @@ export default function App() {
       <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-between items-center">
-            <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center gap-2 z-50">
-              <div className="w-10 h-10 rounded-lg bg-brand-gold flex items-center justify-center text-brand-navy font-bold text-xl">
-                P
-              </div>
-              <div className={`font-bold leading-tight ${isScrolled ? 'text-brand-navy' : 'text-white'}`}>
-                <div className="text-lg">PROM FAMILY</div>
-                <div className="text-xs tracking-wider opacity-80">ENGINEERING CO., LTD.</div>
-              </div>
+            <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center z-50">
+              <img
+                src="https://drive.google.com/uc?export=view&id=14QqOsvxFEKmQu-Kmj4T0an4YrEwPAJTb"
+                alt="Prom Family Engineering Logo"
+                className="h-12 md:h-16 w-auto object-contain bg-white/90 rounded-lg p-2 shadow-sm"
+                referrerPolicy="no-referrer"
+              />
             </a>
 
             {/* Desktop Nav */}
@@ -500,14 +499,13 @@ export default function App() {
       <footer className="bg-gray-900 text-white py-12 border-t border-gray-800">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-lg bg-brand-gold flex items-center justify-center text-brand-navy font-bold text-2xl">
-                P
-              </div>
-              <div>
-                <div className="font-bold text-lg">บริษัท พร้อม แฟมิลี่ เอ็นจิเนียริ่ง จำกัด</div>
-                <div className="text-sm text-gray-400">PROM FAMILY ENGINEERING CO., LTD.</div>
-              </div>
+            <div className="flex items-center">
+              <img
+                src="https://drive.google.com/uc?export=view&id=14QqOsvxFEKmQu-Kmj4T0an4YrEwPAJTb"
+                alt="Prom Family Engineering Logo"
+                className="h-16 md:h-20 w-auto object-contain bg-white rounded-xl p-3 shadow-sm"
+                referrerPolicy="no-referrer"
+              />
             </div>
             
             <div className="flex gap-6 text-sm text-gray-400">
