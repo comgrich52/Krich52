@@ -69,11 +69,11 @@ export default function App() {
       <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-between items-center">
-            <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center z-50">
+            <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="flex items-center z-50 bg-white rounded-xl p-2 md:p-2.5 shadow-lg transition-transform hover:scale-105">
               <img
-                src="/logo.png"
+                src="/logo-transparent.png"
                 alt="Prom Family Engineering Logo"
-                className="h-12 md:h-16 w-auto object-contain bg-white/90 rounded-lg p-2 shadow-sm"
+                className="h-10 md:h-12 w-auto object-contain"
               />
             </a>
 
@@ -432,17 +432,27 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-brand-navy mb-1">ที่ตั้งบริษัท</h4>
-                    <p className="text-gray-600">123 ถนนตัวอย่าง แขวงตัวอย่าง<br/>เขตตัวอย่าง กรุงเทพมหานคร 10000</p>
+                    <p className="text-gray-600">102/190 ซอย สรงประภา13 แขวงดอนเมือง<br/>เขตดอนเมือง กรุงเทพมหานคร 10210</p>
                   </div>
                 </motion.div>
                 
+                <motion.div variants={fadeIn} className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-brand-blue shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-brand-navy mb-1">เลขประจำตัวผู้เสียภาษี</h4>
+                    <p className="text-gray-600">0105567150376</p>
+                  </div>
+                </motion.div>
+
                 <motion.div variants={fadeIn} className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center text-brand-blue shrink-0">
                     <Phone size={24} />
                   </div>
                   <div>
                     <h4 className="font-bold text-brand-navy mb-1">เบอร์โทรศัพท์</h4>
-                    <p className="text-gray-600">02-XXX-XXXX, 08X-XXX-XXXX</p>
+                    <p className="text-gray-600">080-569-2959</p>
                   </div>
                 </motion.div>
 
@@ -452,7 +462,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-brand-navy mb-1">อีเมล</h4>
-                    <p className="text-gray-600">contact@promfamily.co.th</p>
+                    <p className="text-gray-600">promfamily_eng@outlook.com</p>
                   </div>
                 </motion.div>
               </div>
@@ -497,20 +507,39 @@ export default function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 border-t border-gray-800">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center">
-              <img
-                src="/logo.png"
-                alt="Prom Family Engineering Logo"
-                className="h-16 md:h-20 w-auto object-contain bg-white rounded-xl p-3 shadow-sm"
-              />
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-6">
+            <div className="flex flex-col gap-6">
+              <div className="flex items-center bg-white rounded-2xl p-3 md:p-4 shadow-lg inline-flex self-start">
+                <img
+                  src="/logo-transparent.png"
+                  alt="Prom Family Engineering Logo"
+                  className="h-12 md:h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="text-gray-400 text-sm max-w-sm">
+                <p className="mb-1">บริษัท พร้อม แฟมิลี่ เอ็นจิเนียริ่ง จำกัด</p>
+                <p>102/190 ซอย สรงประภา13 แขวงดอนเมือง เขตดอนเมือง กรุงเทพมหานคร 10210</p>
+                <p className="mt-2">เลขประจำตัวผู้เสียภาษี: 0105567150376</p>
+              </div>
             </div>
             
-            <div className="flex gap-6 text-sm text-gray-400">
-              <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="hover:text-brand-gold transition-colors">หน้าแรก</a>
-              <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="hover:text-brand-gold transition-colors">เกี่ยวกับเรา</a>
-              <a href="#services" onClick={(e) => scrollToSection(e, '#services')} className="hover:text-brand-gold transition-colors">บริการ</a>
-              <a href="#portfolio" onClick={(e) => scrollToSection(e, '#portfolio')} className="hover:text-brand-gold transition-colors">ผลงาน</a>
+            <div className="flex flex-col gap-4">
+              <div className="flex gap-6 text-sm text-gray-400">
+                <a href="#hero" onClick={(e) => scrollToSection(e, '#hero')} className="hover:text-brand-gold transition-colors">หน้าแรก</a>
+                <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="hover:text-brand-gold transition-colors">เกี่ยวกับเรา</a>
+                <a href="#services" onClick={(e) => scrollToSection(e, '#services')} className="hover:text-brand-gold transition-colors">บริการ</a>
+                <a href="#portfolio" onClick={(e) => scrollToSection(e, '#portfolio')} className="hover:text-brand-gold transition-colors">ผลงาน</a>
+              </div>
+              <div className="flex flex-col gap-2 text-sm text-gray-400 mt-2">
+                <div className="flex items-center gap-2">
+                  <Phone size={16} className="text-brand-gold" />
+                  <span>080-569-2959</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail size={16} className="text-brand-gold" />
+                  <span>promfamily_eng@outlook.com</span>
+                </div>
+              </div>
             </div>
           </div>
           
